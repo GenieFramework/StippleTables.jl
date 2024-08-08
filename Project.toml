@@ -10,4 +10,5 @@ StippleUI = "a3c5d34a-b254-4859-a8fa-b86abb7e84a3"
 [compat]
 Stipple = "0.28, 0.29, 0.30"
 StippleUI = "0.23"
+DataFrames = "1.6.1"
 julia = "1.6"
