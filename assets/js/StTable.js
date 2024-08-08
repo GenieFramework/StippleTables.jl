@@ -12,17 +12,41 @@ Vue.component("st-table", {
             v-on:request="handleRequest"
             :fullscreen="isFullscreen"
             v-bind="$attrs"
+            dense
         >
             <template v-slot:top-right>
-                <div v-if="showcontrols" class="row q-gutter-sm">
+                <div v-if="showcontrols" class="q-gutter-sm" style="min-width:100%; display:flex">
                     <q-select
-                        v-if="groupby"
+                        v-if="aggregatebyisBound"
+                        label="Aggregate by"
+                        v-model="aggregateby"
+                        :options="aggregatebyoptions"
+                        dense
+                        multiple
+                        clearable
+                        style="min-width:200px"
+                        @input="$emit('update:aggregateby', $event);"
+                        @clear="$emit('update:aggregateby', [])"
+                    ></q-select>
+                    <q-select
+                        v-if="aggregatebyisBound && aggregatetarget && aggregatetargetoptions.length"
+                        label="Aggregation target"
+                        v-model="aggregatetarget"
+                        :options="aggregatetargetoptions"
+                        dense
+                        style="min-width:200px"
+                        @input="$emit('update:aggregatetarget', $event);"
+                    ></q-select>
+                     <q-select
+                        v-if="groupbyisBound"
                         label="Group by"
                         v-model="groupby"
                         :options="groupbyoptions"
                         dense
+                        clearable
                         style="min-width:200px"
                         @input="$emit('update:groupby', $event);"
+                        @clear="$emit('update:groupby', '')"
                     ></q-select>
                     <q-select
                         v-if="groupby && groupkeys.length"
@@ -34,7 +58,7 @@ Vue.component("st-table", {
                         @input="$emit('update:selectedkey', $event);"
                     ></q-select>
                     <q-select
-                        v-if="searchcolumns"
+                        v-if="searchcolumns && filter"
                         id="filter-columns"
                         label="Filter columns"
                         v-model="selectedColumns"
@@ -110,7 +134,7 @@ Vue.component("st-table", {
             default: true
         },
         groupby: {
-            default: ''
+            default: undefined
         },
         groupbyoptions: {
             type: Array,
@@ -122,6 +146,18 @@ Vue.component("st-table", {
         },
         selectedkey: {
             default: ''
+        },
+        aggregateby: {
+            type: Array
+        },
+        aggregatebyoptions: {
+            type: Array
+        },
+        aggregatetarget: {
+            default: undefined
+        },
+        aggregatetargetoptions: {
+            type: Array
         }
     },
     inheritAttrs: false,
@@ -130,6 +166,7 @@ Vue.component("st-table", {
             selectedColumns: [],
             isFullscreen: false,
             selectedGroupSelect: null,
+            groupbyisBound: false
         };
     },
     computed: {
@@ -179,4 +216,9 @@ Vue.component("st-table", {
             this.isFullscreen = !this.isFullscreen;
         },
     },
+    created() {
+        // Check if groupby prop is bound
+        this.groupbyisBound = this.$options.propsData.hasOwnProperty('groupby');
+        this.aggregatebyisBound = this.$options.propsData.hasOwnProperty('aggregateby');
+    }
 });
