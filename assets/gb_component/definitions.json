@@ -10,6 +10,46 @@
     "proRequired": true,
     "properties": [
       {
+        "label": "",
+        "name": "",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "",
+        "category": ""
+      },
+      {
+        "label": "",
+        "name": "",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "",
+        "category": ""
+      },
+      {
+        "label": "",
+        "name": "",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "",
+        "category": ""
+      },
+      {
+        "label": "",
+        "name": "",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "",
+        "category": ""
+      },
+      {
+        "label": "",
+        "name": "",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "",
+        "category": ""
+      },
+      {
         "label": "fullscreen",
         "name": "fullscreen",
         "examples": [
