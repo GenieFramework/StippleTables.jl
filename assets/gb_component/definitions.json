@@ -10,44 +10,140 @@
     "proRequired": true,
     "properties": [
       {
-        "label": "",
-        "name": "",
+        "label": "columns",
+        "name": "columns",
         "enabled": true,
-        "type": "Boolean",
-        "desc": "",
-        "category": ""
+        "type": "Array",
+        "desc": "The column definitions (Array of Objects)",
+        "category": "general"
       },
       {
-        "label": "",
-        "name": "",
+        "label": "data",
+        "name": "data",
         "enabled": true,
-        "type": "Boolean",
-        "desc": "",
-        "category": ""
+        "type": "Array",
+        "desc": "Data to display",
+        "category": "general"
       },
       {
-        "label": "",
-        "name": "",
+        "label": "title",
+        "name": "title",
         "enabled": true,
-        "type": "Boolean",
-        "desc": "",
-        "category": ""
+        "type": "String",
+        "desc": "Table title",
+        "category": "content"
       },
       {
-        "label": "",
-        "name": "",
+        "label": "pagination",
+        "name": "pagination",
         "enabled": true,
-        "type": "Boolean",
-        "desc": "",
-        "category": ""
+        "type": "Object",
+        "desc": "Pagination object",
+        "category": "pagination"
       },
       {
-        "label": "",
-        "name": "",
+        "label": "filter",
+        "name": "filter",
+        "enabled": true,
+        "type": "String",
+        "desc": "Filter string for the table",
+        "category": "filter"
+      },
+      {
+        "label": "showcontrols",
+        "name": "showcontrols",
         "enabled": true,
         "type": "Boolean",
-        "desc": "",
-        "category": ""
+        "desc": "Show the controls at the top of the table",
+        "category": "behavior"
+      },
+      {
+        "label": "search",
+        "name": "search",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "Enable search functionality",
+        "category": "filter"
+      },
+      {
+        "label": "searchcolumns",
+        "name": "searchcolumns",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "Enable column selection for search",
+        "category": "filter"
+      },
+      {
+        "label": "fullscreentoggle",
+        "name": "fullscreentoggle",
+        "enabled": true,
+        "type": "Boolean",
+        "desc": "Show fullscreen toggle button",
+        "category": "behavior"
+      },
+      {
+        "label": "groupby",
+        "name": "groupby",
+        "enabled": true,
+        "type": "String",
+        "desc": "Column to group by",
+        "category": "behavior"
+      },
+      {
+        "label": "groupbyoptions",
+        "name": "groupbyoptions",
+        "enabled": true,
+        "type": "Array",
+        "desc": "Options for grouping",
+        "category": "behavior"
+      },
+      {
+        "label": "groupkeys",
+        "name": "groupkeys",
+        "enabled": true,
+        "type": "Array",
+        "desc": "Keys for grouping",
+        "category": "behavior"
+      },
+      {
+        "label": "selectedkey",
+        "name": "selectedkey",
+        "enabled": true,
+        "type": "String",
+        "desc": "Selected key for grouping",
+        "category": "behavior"
+      },
+      {
+        "label": "aggregateby",
+        "name": "aggregateby",
+        "enabled": true,
+        "type": "Array",
+        "desc": "Columns to aggregate by",
+        "category": "behavior"
+      },
+      {
+        "label": "aggregatebyoptions",
+        "name": "aggregatebyoptions",
+        "enabled": true,
+        "type": "Array",
+        "desc": "Options for aggregation",
+        "category": "behavior"
+      },
+      {
+        "label": "aggregatetarget",
+        "name": "aggregatetarget",
+        "enabled": true,
+        "type": "String",
+        "desc": "Target column for aggregation",
+        "category": "behavior"
+      },
+      {
+        "label": "aggregatetargetoptions",
+        "name": "aggregatetargetoptions",
+        "enabled": true,
+        "type": "Array",
+        "desc": "Options for aggregation target",
+        "category": "behavior"
       },
       {
         "label": "fullscreen",
