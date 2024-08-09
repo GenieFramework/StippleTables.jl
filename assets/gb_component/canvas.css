@@ -1,0 +1,10 @@
+
+st-table{
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+}
+st-table > *{
+    /* background-color: #ff0000; */
+    pointer-events: none;
+}
