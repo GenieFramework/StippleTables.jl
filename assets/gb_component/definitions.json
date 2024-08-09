@@ -9,7 +9,6 @@
   "content": "<st-table gb_c__data=\"[]\" gb_c__dense=\"true\" gb_c__search=\"true\" gb_c__showcontrols=\"true\"></st-table>",
   "droppable": false,
   "proRequired": true,
-  "nestable": true, 
   "properties": [
   {
       "label": "",
