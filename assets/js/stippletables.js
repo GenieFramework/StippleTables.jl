@@ -236,8 +236,7 @@ Vue.component("st-table", {
                 return value;
             }
             return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
+                style: 'decimal',
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2
             }).format(value);
