@@ -1,4 +1,3 @@
-
 {
   "label": "STable",
   "gbPluginId": "stippletable",
@@ -11,838 +10,846 @@
   "proRequired": true,
   "properties": [
     {
-        "label": "columns",
-        "name": "columns",
-        "enabled": true,
-        "type": "Array",
-        "desc": "The column definitions (Array of Objects)",
-        "category": "general"
-      },
-      {
-        "label": "data",
-        "name": "data",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Data to display",
-        "category": "general"
-      },
-      {
-        "label": "title",
-        "name": "title",
-        "enabled": true,
-        "type": "String",
-        "desc": "Table title",
-        "category": "content"
-      },
-      {
-        "label": "pagination",
-        "name": "pagination",
-        "enabled": true,
-        "type": "Object",
-        "desc": "Pagination object",
-        "category": "pagination"
-      },
-      {
-        "label": "filter",
-        "name": "filter",
-        "enabled": true,
-        "type": "String",
-        "desc": "Filter string for the table",
-        "category": "filter"
-      },
-      {
-        "label": "showcontrols",
-        "name": "showcontrols",
-        "enabled": true,
-        "type": "Boolean",
-        "desc": "Show the controls at the top of the table",
-        "category": "behavior"
-      },
-      {
-        "label": "search",
-        "name": "search",
-        "enabled": true,
-        "type": "Boolean",
-        "desc": "Enable search functionality",
-        "category": "filter"
-      },
-      {
-        "label": "searchcolumns",
-        "name": "searchcolumns",
-        "enabled": true,
-        "type": "Boolean",
-        "desc": "Enable column selection for search",
-        "category": "filter"
-      },
-      {
-        "label": "fullscreentoggle",
-        "name": "fullscreentoggle",
-        "enabled": true,
-        "type": "Boolean",
-        "desc": "Show fullscreen toggle button",
-        "category": "behavior"
-      },
-      {
-        "label": "groupby",
-        "name": "groupby",
-        "enabled": true,
-        "type": "String",
-        "desc": "Column to group by",
-        "category": "behavior"
-      },
-      {
-        "label": "groupbyoptions",
-        "name": "groupbyoptions",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Options for grouping",
-        "category": "behavior"
-      },
-      {
-        "label": "groupkeys",
-        "name": "groupkeys",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Keys for grouping",
-        "category": "behavior"
-      },
-      {
-        "label": "selectedkey",
-        "name": "selectedkey",
-        "enabled": true,
-        "type": "String",
-        "desc": "Selected key for grouping",
-        "category": "behavior"
-      },
-      {
-        "label": "aggregateby",
-        "name": "aggregateby",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Columns to aggregate by",
-        "category": "behavior"
-      },
-      {
-        "label": "aggregatebyoptions",
-        "name": "aggregatebyoptions",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Options for aggregation",
-        "category": "behavior"
-      },
-      {
-        "label": "aggregatetarget",
-        "name": "aggregatetarget",
-        "enabled": true,
-        "type": "String",
-        "desc": "Target column for aggregation",
-        "category": "behavior"
-      },
-      {
-        "label": "aggregatetargetoptions",
-        "name": "aggregatetargetoptions",
-        "enabled": true,
-        "type": "Array",
-        "desc": "Options for aggregation target",
-        "category": "behavior"
-      },
-  {
+      "label": "columns",
+      "name": "columns",
+      "enabled": true,
+      "type": "Array",
+      "desc": "The column definitions (Array of Objects)",
+      "category": "general"
+    },
+    {
+      "label": "data",
+      "name": "data",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Data to display",
+      "category": "general"
+    },
+    {
+      "label": "title",
+      "name": "title",
+      "enabled": true,
+      "type": "String",
+      "desc": "Table title",
+      "category": "content"
+    },
+    {
+      "label": "pagination",
+      "name": "pagination",
+      "enabled": true,
+      "type": "Object",
+      "desc": "Pagination object",
+      "category": "pagination"
+    },
+    {
+      "label": "filter",
+      "name": "filter",
+      "enabled": true,
+      "type": "String",
+      "desc": "Filter string for the table",
+      "category": "filter"
+    },
+    {
+      "label": "showcontrols",
+      "name": "showcontrols",
+      "enabled": true,
+      "type": "Boolean",
+      "desc": "Show the controls at the top of the table",
+      "category": "behavior"
+    },
+    {
+      "label": "search",
+      "name": "search",
+      "enabled": true,
+      "type": "Boolean",
+      "desc": "Enable search functionality",
+      "category": "filter"
+    },
+    {
+      "label": "Filter columns",
+      "name": "searchcolumns",
+      "enabled": true,
+      "type": "Boolean",
+      "desc": "Enable column selection for search",
+      "category": "filter"
+    },
+    {
+      "label": "Fullscreen toggle",
+      "name": "fullscreentoggle",
+      "enabled": true,
+      "type": "Boolean",
+      "desc": "Show fullscreen toggle button",
+      "category": "behavior"
+    },
+    {
+      "label": "Group by",
+      "name": "groupby.sync",
+      "enabled": true,
+      "type": "String",
+      "desc": "Column to group by",
+      "category": "behavior"
+    },
+    {
+      "label": "Group options",
+      "name": "groupbyoptions",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Options for grouping",
+      "category": "behavior"
+    },
+    {
+      "label": "Group keys",
+      "name": "groupkeys.sync",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Keys for grouping",
+      "category": "behavior"
+    },
+    {
+      "label": "Selected key",
+      "name": "selectedkey.sync",
+      "enabled": true,
+      "type": "String",
+      "desc": "Selected key for grouping",
+      "category": "behavior"
+    },
+    {
+      "label": "Aggr. by",
+      "name": "aggregateby.sync",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Columns to aggregate by",
+      "category": "behavior"
+    },
+    {
+      "label": "Aggr. options",
+      "name": "aggregatebyoptions.sync",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Options for aggregation",
+      "category": "behavior"
+    },
+    {
+      "label": "Aggr. target",
+      "name": "aggregatetarget.sync",
+      "enabled": true,
+      "type": "String",
+      "desc": "Target column for aggregation",
+      "category": "behavior"
+    },
+    {
+      "label": "Aggr. tar. opts.",
+      "name": "aggregatetargetoptions.sync",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Options for aggregation target",
+      "category": "behavior"
+    },
+    {
+      "label": "Currency cols.",
+      "name": "currencycolumns",
+      "enabled": true,
+      "type": "Array",
+      "desc": "Columns to format as currency",
+      "category": "general"
+    },
+    {
       "label": "fullscreen",
       "name": "fullscreen",
       "examples": [
-      "v-model:fullscreen=\"isFullscreen\""
+        "v-model:fullscreen=\"isFullscreen\""
       ],
       "enabled": true,
       "type": "Boolean",
       "desc": "Fullscreen mode",
       "category": "behavior"
-  },
-  {
+    },
+    {
       "label": "no-route-fullscreen-exit",
       "name": "no-route-fullscreen-exit",
       "enabled": true,
       "type": "Boolean",
       "desc": "Changing route app won't exit fullscreen",
       "category": "behavior"
-  },
-  {
+    },
+    {
       "label": "data",
       "name": "data",
       "examples": [
-      ":data=\"myData\""
+        ":data=\"myData\""
       ],
       "enabled": true,
       "type": "Array",
       "desc": "Data to display",
       "category": "general"
-  },
-  {
+    },
+    {
       "label": "row-key",
       "name": "row-key",
       "examples": [
-      "row-key=\"name\"",
-      ":row-key=\"row => row.name\""
+        "row-key=\"name\"",
+        ":row-key=\"row => row.name\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Function"
+        "String",
+        "Function"
       ],
       "desc": "Property of each row that defines the unique key of each row (the result must be a primitive, not Object, Array, etc); The value of property must be string or a function taking a row and returning the desired (nested) key in the row; If supplying a function then for best performance, reference it from your scope and do not define it inline",
       "category": "general"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll",
       "name": "virtual-scroll",
       "enabled": true,
       "type": "Boolean",
       "desc": "Display data using QVirtualScroll (for non-grid mode only)",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-target",
       "name": "virtual-scroll-target",
       "examples": [
-      ":scroll-target=\"$refs.scrollTarget\"",
-      "scroll-target=\".scroll-target-class\"",
-      "scroll-target=\"#scroll-target-id\"",
-      "scroll-target=\"body\""
+        ":scroll-target=\"$refs.scrollTarget\"",
+        "scroll-target=\".scroll-target-class\"",
+        "scroll-target=\"#scroll-target-id\"",
+        "scroll-target=\"body\""
       ],
       "enabled": true,
       "type": [
-      "Element",
-      "String"
+        "Element",
+        "String"
       ],
       "desc": "CSS selector or DOM element to be used as a custom scroll container instead of the auto detected one",
       "category": "behavior"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-slice-size",
       "name": "virtual-scroll-slice-size",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Minimum number of rows to render in the virtual list",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-slice-ratio-before",
       "name": "virtual-scroll-slice-ratio-before",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Ratio of number of rows in visible zone to render before it",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-slice-ratio-after",
       "name": "virtual-scroll-slice-ratio-after",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Ratio of number of rows in visible zone to render after it",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-item-size",
       "name": "virtual-scroll-item-size",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Default size in pixels of a row; This value is used for rendering the initial table; Try to use a value close to the minimum size of a row",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-sticky-size-start",
       "name": "virtual-scroll-sticky-size-start",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Size in pixels of the sticky header (if using one); A correct value will improve scroll precision; Will be also used for non-virtual-scroll tables for fixing top alignment when using scrollTo method",
       "category": "virtual-scroll|behavior"
-  },
-  {
+    },
+    {
       "label": "virtual-scroll-sticky-size-end",
       "name": "virtual-scroll-sticky-size-end",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "Size in pixels of the sticky footer part (if using one); A correct value will improve scroll precision",
       "category": "virtual-scroll"
-  },
-  {
+    },
+    {
       "label": "table-colspan",
       "name": "table-colspan",
       "enabled": true,
       "type": [
-      "Number",
-      "String"
+        "Number",
+        "String"
       ],
       "desc": "The number of columns in the table (you need this if you use table-layout: fixed)",
       "category": "virtual-scroll|content"
-  },
-  {
+    },
+    {
       "label": "color",
       "name": "color",
       "options": "${supportedColors}",
       "examples": [
-      "primary",
-      "teal",
-      "teal-10"
+        "primary",
+        "teal",
+        "teal-10"
       ],
       "uitype": "enum_colors",
       "enabled": true,
       "type": "String",
       "desc": "Color name for component from the Quasar Color Palette",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "icon-first-page",
       "name": "icon-first-page",
       "options": "${supportedIcons}",
       "examples": [
-      "map",
-      "ion-add",
-      "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
-      "img:path/to/some_image.png"
+        "map",
+        "ion-add",
+        "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+        "img:path/to/some_image.png"
       ],
       "uitype": "enum_icons",
       "enabled": true,
       "type": "String",
       "desc": "Icon name following Quasar convention for stepping to first page; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "icon-prev-page",
       "name": "icon-prev-page",
       "options": "${supportedIcons}",
       "examples": [
-      "map",
-      "ion-add",
-      "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
-      "img:path/to/some_image.png"
+        "map",
+        "ion-add",
+        "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+        "img:path/to/some_image.png"
       ],
       "uitype": "enum_icons",
       "enabled": true,
       "type": "String",
       "desc": "Icon name following Quasar convention for stepping to previous page; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "icon-next-page",
       "name": "icon-next-page",
       "options": "${supportedIcons}",
       "examples": [
-      "map",
-      "ion-add",
-      "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
-      "img:path/to/some_image.png"
+        "map",
+        "ion-add",
+        "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+        "img:path/to/some_image.png"
       ],
       "uitype": "enum_icons",
       "enabled": true,
       "type": "String",
       "desc": "Icon name following Quasar convention for stepping to next page; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "icon-last-page",
       "name": "icon-last-page",
       "options": "${supportedIcons}",
       "examples": [
-      "map",
-      "ion-add",
-      "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
-      "img:path/to/some_image.png"
+        "map",
+        "ion-add",
+        "img:https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+        "img:path/to/some_image.png"
       ],
       "uitype": "enum_icons",
       "enabled": true,
       "type": "String",
       "desc": "Icon name following Quasar convention for stepping to last page; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "grid",
       "name": "grid",
       "enabled": true,
       "type": "Boolean",
       "desc": "Display data as a grid instead of the default table",
       "category": "behavior"
-  },
-  {
+    },
+    {
       "label": "grid-header",
       "name": "grid-header",
       "enabled": true,
       "type": "Boolean",
       "desc": "Display header for grid-mode also",
       "category": "behavior|content"
-  },
-  {
+    },
+    {
       "label": "dense",
       "name": "dense",
       "enabled": true,
       "type": "Boolean",
       "desc": "Dense mode; Connect with $q.screen for responsive behavior",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "columns",
       "name": "columns",
       "examples": [
-      ":columns=\"tableColumns\""
+        ":columns=\"tableColumns\""
       ],
       "enabled": true,
       "type": "Array",
       "desc": "The column definitions (Array of Objects)",
       "category": "column"
-  },
-  {
+    },
+    {
       "label": "visible-columns",
       "name": "visible-columns",
       "examples": [
-      ":visible-columns=\"myCols\"",
-      "[ 'desc', 'carbs', 'protein' ]"
+        ":visible-columns=\"myCols\"",
+        "[ 'desc', 'carbs', 'protein' ]"
       ],
       "enabled": true,
       "type": "Array",
       "desc": "Array of Strings defining column names ('name' property of each column from 'columns' prop definitions); Columns marked as 'required' are not affected by this property",
       "category": "column"
-  },
-  {
+    },
+    {
       "label": "loading",
       "name": "loading",
       "enabled": true,
       "type": "Boolean",
       "desc": "Put Table into 'loading' state; Notify the user something is happening behind the scenes",
       "category": "behavior|content"
-  },
-  {
+    },
+    {
       "label": "title",
       "name": "title",
       "examples": [
-      "Device list"
+        "Device list"
       ],
       "enabled": true,
       "type": "String",
       "desc": "Table title",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "hide-header",
       "name": "hide-header",
       "enabled": true,
       "type": "Boolean",
       "desc": "Hide table header layer",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "hide-bottom",
       "name": "hide-bottom",
       "enabled": true,
       "type": "Boolean",
       "desc": "Hide table bottom layer regardless of what it has to display",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "hide-selected-banner",
       "name": "hide-selected-banner",
       "enabled": true,
       "type": "Boolean",
       "desc": "Hide the selected rows banner (if any)",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "hide-no-data",
       "name": "hide-no-data",
       "enabled": true,
       "type": "Boolean",
       "desc": "Hide the default no data bottom layer",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "hide-pagination",
       "name": "hide-pagination",
       "enabled": true,
       "type": "Boolean",
       "desc": "Hide the pagination controls at the bottom",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "dark",
       "name": "dark",
       "enabled": true,
       "type": "Boolean",
       "desc": "Notify the component that the background is a dark color",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "flat",
       "name": "flat",
       "enabled": true,
       "type": "Boolean",
       "desc": "Applies a 'flat' design (no default shadow)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "bordered",
       "name": "bordered",
       "enabled": true,
       "type": "Boolean",
       "desc": "Applies a default border to the component",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "square",
       "name": "square",
       "enabled": true,
       "type": "Boolean",
       "desc": "Removes border-radius so borders are squared",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "separator",
       "name": "separator",
       "enabled": true,
       "type": "String",
       "desc": "Use a separator/border between rows, columns or all cells",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "wrap-cells",
       "name": "wrap-cells",
       "enabled": true,
       "type": "Boolean",
       "desc": "Wrap text within table cells",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "binary-state-sort",
       "name": "binary-state-sort",
       "enabled": true,
       "type": "Boolean",
       "desc": "Skip the third state (unsorted) when user toggles column sort direction",
       "category": "sorting"
-  },
-  {
+    },
+    {
       "label": "column-sort-order",
       "name": "column-sort-order",
       "enabled": true,
       "type": "String",
       "desc": "Set column sort order: 'ad' (ascending-descending) or 'da' (descending-ascending); It gets applied to all columns unless a column has its own sortOrder specified in the 'columns' definition prop",
       "category": "sorting"
-  },
-  {
+    },
+    {
       "label": "no-data-label",
       "name": "no-data-label",
       "examples": [
-      "No devices available"
+        "No devices available"
       ],
       "enabled": true,
       "type": "String",
       "desc": "Override default text to display when no data is available",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "no-results-label",
       "name": "no-results-label",
       "examples": [
-      "No matched records"
+        "No matched records"
       ],
       "enabled": true,
       "type": "String",
       "desc": "Override default text to display when user filters the table and no matched results are found",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "loading-label",
       "name": "loading-label",
       "examples": [
-      "Loading devices..."
+        "Loading devices..."
       ],
       "enabled": true,
       "type": "String",
       "desc": "Override default text to display when table is in loading state (see 'loading' prop)",
       "category": "content"
-  },
-  {
+    },
+    {
       "label": "selected-rows-label",
       "name": "selected-rows-label",
       "examples": [
-      ":selected-rows-label=\"getSelectedString\""
+        ":selected-rows-label=\"getSelectedString\""
       ],
       "enabled": true,
       "type": "Function",
       "desc": "Text to display when user selected at least one row; For best performance, reference it from your scope and do not define it inline",
       "category": "selection"
-  },
-  {
+    },
+    {
       "label": "rows-per-page-label",
       "name": "rows-per-page-label",
       "examples": [
-      "Records per page:"
+        "Records per page:"
       ],
       "enabled": true,
       "type": "String",
       "desc": "Text to override default rows per page label at bottom of table",
       "category": "pagination"
-  },
-  {
+    },
+    {
       "label": "pagination-label",
       "name": "pagination-label",
       "examples": [
-      ":pagination-label=\"getPaginationLabel\""
+        ":pagination-label=\"getPaginationLabel\""
       ],
       "enabled": true,
       "type": "Function",
       "desc": "Text to override default pagination label at bottom of table (unless 'pagination' scoped slot is used); For best performance, reference it from your scope and do not define it inline",
       "category": "pagination"
-  },
-  {
+    },
+    {
       "label": "table-style",
       "name": "table-style",
       "examples": [
-      "background-color: #ff0000",
-      ":table-style=\"{ backgroundColor: '#ff0000' }\""
+        "background-color: #ff0000",
+        ":table-style=\"{ backgroundColor: '#ff0000' }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS style to apply to native HTML <table> element's wrapper (which is a DIV)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "table-class",
       "name": "table-class",
       "examples": [
-      "my-special-class",
-      ":table-class=\"{ 'my-special-class': [Boolean condition] }\""
+        "my-special-class",
+        ":table-class=\"{ 'my-special-class': [Boolean condition] }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS classes to apply to native HTML <table> element's wrapper (which is a DIV)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "table-header-style",
       "name": "table-header-style",
       "examples": [
-      "background-color: #ff0000",
-      ":table-header-style=\"{ backgroundColor: '#ff0000' }\""
+        "background-color: #ff0000",
+        ":table-header-style=\"{ backgroundColor: '#ff0000' }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS style to apply to header of native HTML <table> (which is a TR)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "table-header-class",
       "name": "table-header-class",
       "examples": [
-      "my-special-class",
-      ":table-header-class=\"{ 'my-special-class': [Boolean condition] }\""
+        "my-special-class",
+        ":table-header-class=\"{ 'my-special-class': [Boolean condition] }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS classes to apply to header of native HTML <table> (which is a TR)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "card-container-style",
       "name": "card-container-style",
       "examples": [
-      "background-color: #ff0000",
-      ":card-container-style=\"{ backgroundColor: '#ff0000' }\""
+        "background-color: #ff0000",
+        ":card-container-style=\"{ backgroundColor: '#ff0000' }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS style to apply to the cards container (when in grid mode)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "card-container-class",
       "name": "card-container-class",
       "examples": [
-      "my-special-class",
-      "justify-center",
-      ":card-container-class=\"{ 'my-special-class': [Boolean condition] }\""
+        "my-special-class",
+        "justify-center",
+        ":card-container-class=\"{ 'my-special-class': [Boolean condition] }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS classes to apply to the cards container (when in grid mode)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "card-style",
       "name": "card-style",
       "examples": [
-      "background-color: #ff0000",
-      ":card-style=\"{ backgroundColor: '#ff0000' }\""
+        "background-color: #ff0000",
+        ":card-style=\"{ backgroundColor: '#ff0000' }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS style to apply to the card (when in grid mode) or container card (when not in grid mode)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "card-class",
       "name": "card-class",
       "examples": [
-      "my-special-class",
-      ":card-class=\"{ 'my-special-class': [Boolean condition] }\""
+        "my-special-class",
+        ":card-class=\"{ 'my-special-class': [Boolean condition] }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS classes to apply to the card (when in grid mode) or container card (when not in grid mode)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "title-class",
       "name": "title-class",
       "examples": [
-      "my-special-class",
-      "text-h1",
-      ":title-class=\"{ 'text-h1': [Boolean condition] }\""
+        "my-special-class",
+        "text-h1",
+        ":title-class=\"{ 'text-h1': [Boolean condition] }\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Array",
-      "Object"
+        "String",
+        "Array",
+        "Object"
       ],
       "desc": "CSS classes to apply to the title (if using 'title' prop)",
       "category": "style"
-  },
-  {
+    },
+    {
       "label": "filter",
       "name": "filter",
       "examples": [
-      ":filter=\"myFilterInput\""
+        ":filter=\"myFilterInput\""
       ],
       "enabled": true,
       "type": [
-      "String",
-      "Object"
+        "String",
+        "Object"
       ],
       "desc": "String/Object to filter table with; When using an Object it requires 'filter-method' to also be specified since it will be a custom filtering",
       "category": "filter"
-  },
-  {
+    },
+    {
       "label": "filter-method",
       "name": "filter-method",
       "examples": [
-      "(see source code)"
+        "(see source code)"
       ],
       "enabled": true,
       "type": "Function",
       "desc": "The actual filtering mechanism; For best performance, reference it from your scope and do not define it inline",
       "category": "filter"
-  },
-  {
+    },
+    {
       "label": "pagination",
       "name": "pagination",
       "examples": [
-      ":pagination=\"myInitialPagination\"",
-      "v-model:pagination=\"myPagination\""
+        ":pagination=\"myInitialPagination\"",
+        "v-model:pagination=\"myPagination\""
       ],
       "enabled": true,
       "type": "Object",
       "desc": "Pagination object; You can also use the 'v-model:pagination' for synching; When not synching it simply initializes the pagination on first render",
       "category": "pagination"
-  },
-  {
+    },
+    {
       "label": "rows-per-page-options",
       "name": "rows-per-page-options",
       "examples": [
-      ":rows-per-page-options=\"[10, 20]\""
+        ":rows-per-page-options=\"[10, 20]\""
       ],
       "enabled": true,
       "type": "Array",
       "desc": "Options for user to pick (Numbers); Number 0 means 'Show all rows in one page'",
       "category": "pagination"
-  },
-  {
+    },
+    {
       "label": "selection",
       "name": "selection",
       "enabled": true,
       "type": "String",
       "desc": "Selection type",
       "category": "selection"
-  },
-  {
+    },
+    {
       "label": "selected",
       "name": "selected",
       "examples": [
-      "v-model:selected=\"selection\""
+        "v-model:selected=\"selection\""
       ],
       "enabled": true,
       "type": "Array",
       "desc": "Keeps the user selection array",
       "category": "selection"
-  },
-  {
+    },
+    {
       "label": "expanded",
       "name": "expanded",
       "examples": [
-      "v-model:expanded=\"expanded\""
+        "v-model:expanded=\"expanded\""
       ],
       "enabled": true,
       "type": "Array",
       "desc": "Keeps the array with expanded rows keys",
       "category": "expansion"
-  },
-  {
+    },
+    {
       "label": "sort-method",
       "name": "sort-method",
       "examples": [
-      "(see source code)"
+        "(see source code)"
       ],
       "enabled": true,
       "type": "Function",
       "desc": "The actual sort mechanism. Function (rows, sortBy, descending) => sorted rows; For best performance, reference it from your scope and do not define it inline",
       "category": "sorting"
-  }
+    }
   ],
   "category": "Tables",
   "hideFromLibrary": false,
