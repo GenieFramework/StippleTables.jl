@@ -3,7 +3,7 @@ Vue.component("st-table", {
     <div>
         <q-table
             row-key="__id"
-            :columns="columns"
+            :columns="formattedColumns"
             v-model="data"
             :title="title"
             :data="filteredData"
@@ -158,6 +158,10 @@ Vue.component("st-table", {
         },
         aggregatetargetoptions: {
             type: Array
+        },
+        currencycolumns: {
+            type: Array,
+            default: () => ['']
         }
     },
     inheritAttrs: false,
@@ -166,7 +170,8 @@ Vue.component("st-table", {
             selectedColumns: [],
             isFullscreen: false,
             selectedGroupSelect: null,
-            groupbyisBound: false
+            groupbyisBound: false,
+            aggregatebyisBound: false
         };
     },
     computed: {
@@ -198,13 +203,24 @@ Vue.component("st-table", {
                 return searchColumns.some(colName => {
                     let value = row[colName];
                     console.log(`Checking column ${colName}:`, value);
-                    
+
                     // Skip null or undefined values
                     if (value == null) return false;
 
                     // Convert to string and check if it includes the filter
                     return String(value).toLowerCase().includes(this.filter.toLowerCase());
                 });
+            });
+        },
+        formattedColumns() {
+            return this.columns.map(col => {
+                if (this.currencycolumns.includes(col.name)) {
+                    return {
+                        ...col,
+                        format: this.formatCurrency
+                    };
+                }
+                return col;
             });
         }
     },
@@ -215,6 +231,17 @@ Vue.component("st-table", {
         toggleFullscreen() {
             this.isFullscreen = !this.isFullscreen;
         },
+        formatCurrency(value) {
+            if (typeof value !== 'number') {
+                return value;
+            }
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(value);
+        }
     },
     created() {
         // Check if groupby prop is bound
